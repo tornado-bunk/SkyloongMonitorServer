@@ -28,8 +28,8 @@ The server uses `psutil` to collect real-time system information:
 ### 📡 Data Transmission
 - **Connection Protocol:** The server listens on **TCP port 1648** and accepts connections from compatible keyboard devices.
 - **Data Format:** System information is transmitted as an **8-byte data packet**:
-  - **First 4 bytes:** CPU usage as a floating-point number *(0.0-1.0)*
-  - **Last 4 bytes:** Memory usage as a floating-point number *(0.0-1.0)*
+  - **First 4 bytes:** CPU usage as a floating-point number
+  - **Last 4 bytes:** Memory usage as a floating-point number
 
 #### 🔄 Communication Flow:
 1. **Server sends** the 8-byte data packet to connected clients
