@@ -46,11 +46,11 @@ The server uses `psutil` to collect real-time system information:
 ## Installation
 
 ### 🖥 Windows
-1. **Download** the latest release from the [Releases](#) page
+1. **Download** the latest release from the [Releases](https://github.com/tornado-bunk/SkyloongMonitorServer/releases/tag/releasewlinux) page
 2. **Run** the executable file `SkyloongServer.exe`
 
 ### 🐧Linux (Ubuntu and Debian derivates)
-1. **Download** the latest release from the [Releases](#) page
+1. **Download** the latest release from the [Releases]([#](https://github.com/tornado-bunk/SkyloongMonitorServer/releases/tag/releasewlinux)) page
 2. Make it executable:
    ```bash
    chmod +x SkyloongServer
