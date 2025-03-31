@@ -1,4 +1,8 @@
-# Skyloong Monitor
+<p align="center">
+    <img src="/tastiera.ico" width="100">
+</p>
+
+<h1 align="center">Skyloong Monitor Server</h1>
 
 A lightweight, cross-platform server application that monitors system resources and provides real-time CPU and memory usage data to Skyloong keyboard displays.
 
