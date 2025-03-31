@@ -34,7 +34,7 @@ The server uses `psutil` to collect real-time system information:
 #### 🔄 Communication Flow:
 1. **Server sends** the 8-byte data packet to connected clients
 2. **Client responds** with a 1-byte acknowledgment
-3. **Cycle repeats** approximately **3 times per second**
+3. **Cycle repeats** approximately **2 times per second**
 
 ### 🤝 Client Handling
 - Each client connection is handled in a **separate thread**
