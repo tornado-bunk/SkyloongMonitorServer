@@ -49,17 +49,20 @@ The server uses `psutil` to collect real-time system information:
 1. **Download** the latest release from the [Releases](#) page
 2. **Run** the executable file `SkyloongServer.exe`
 
-### 🐧 Linux (not tested yet - will be compiled soon)
-1. **Download** the latest release for Linux
-2. **Make the file executable:**
+### 🐧Linux (Ubuntu and Debian derivates)
+1. **Download** the latest release from the [Releases](#) page
+2. Make it executable:
    ```bash
    chmod +x SkyloongServer
    ```
-3. **Run** the executable file
-      ```bash
+3. Run the application:
+   ```bash
    ./SkyloongServer
    ```
----
+4. #### Recommended: Use daemon mode to avoid system tray issues:
+   ```bash
+   ./SkyloongServer --daemon
+   ```
 
 ## Usage
 
