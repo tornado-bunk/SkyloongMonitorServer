@@ -12,9 +12,7 @@ import io
 import os
 
 def resource_path(relative_path):
-    """Ottiene il percorso assoluto alle risorse, funziona sia in sviluppo che in PyInstaller"""
     try:
-        # PyInstaller crea una cartella temp e memorizza il percorso in _MEIPASS
         base_path = sys._MEIPASS
     except Exception:
         base_path = os.path.abspath(".")
@@ -355,11 +353,11 @@ class ServerGUI:
                                          command=self.toggle_debug)
         self.debug_check.grid(row=0, column=2, padx=5, pady=5)
         
-        # Checkbox for dark mode
-        self.theme_var = tk.BooleanVar(value=False)
-        self.theme_check = ttk.Checkbutton(control_frame, text="Dark Mode", variable=self.theme_var,
-                                         command=self.toggle_theme)
-        self.theme_check.grid(row=0, column=3, padx=5, pady=5)
+        # Checkbox for dark mode - disabled for linux
+        #self.theme_var = tk.BooleanVar(value=False)
+        #self.theme_check = ttk.Checkbutton(control_frame, text="Dark Mode", variable=self.theme_var,
+        #                                 command=self.toggle_theme)
+        #self.theme_check.grid(row=0, column=3, padx=5, pady=5)
 
         # Add help text for keyboard shortcuts
         help_text = "Shortcuts: Ctrl+D = Daemon Mode (Start and minimize)"
